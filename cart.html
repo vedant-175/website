@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - NexTGeN CarT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="cart-section">
+        <div class="cart-container">
+            <h2>Your Cart</h2>
+                <div class="cart-item">
+                    <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" alt="PS England Shoes">
+                    <p><strong>PS England Shoes</strong></p>
+                    <p>Price: $37.24</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+                </div>
+                <div class="cart-item">
+                    <img src="https://i.postimg.cc/76X9ZV8m/Screenshot_from_2022-06-03_18-45-12.png" alt="PS England Jacket">
+                    <p><strong>PS England Jacket</strong></p>
+                    <p>Price: $17.24</p>
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+                </div>
+            <div class="cart-total">
+                <p id="total-amount">Total Amount: $54.48</p>
+                <a href="https://codepen.io/sanketbodke/full/mdprZOq"><button onclick="redirectToSignUp()">Buy Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+    <script>
+        // Load cart items on page load
+        document.addEventListener("DOMContentLoaded", displayCartItems);
+
+        // Redirect to Sign Up section on main page
+        function redirectToSignUp() {
+            window.location.href = "index.html#sign-up"; // Link to sign-up section
+        }
+    </script>
+</body>
+</html>
